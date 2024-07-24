@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "maxish",
+    "password": 1817,
+    "database": "TODO",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "maxish",
+    "password": 1817,
+    "database": "TODO",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "maxish",
+    "password": '1817',
+    "database": "TODO",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

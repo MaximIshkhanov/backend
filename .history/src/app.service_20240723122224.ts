@@ -1,0 +1,5 @@
+
+@Inj
+export class AppService{
+
+}

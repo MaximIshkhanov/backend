@@ -1,0 +1,5 @@
+
+@Contr
+export class AppController {
+
+}

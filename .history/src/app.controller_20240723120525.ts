@@ -1,0 +1,5 @@
+
+@ontroller()
+export class AppController {
+
+}

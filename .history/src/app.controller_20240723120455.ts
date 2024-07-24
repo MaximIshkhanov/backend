@@ -1,0 +1,5 @@
+
+@C
+export class AppController {
+
+}

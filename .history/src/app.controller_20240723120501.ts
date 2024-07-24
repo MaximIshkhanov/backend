@@ -1,0 +1,5 @@
+
+@Contriller
+export class AppController {
+
+}
