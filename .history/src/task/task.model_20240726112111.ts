@@ -1,8 +1,11 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { Column, DataType, Model, PrimaryKey, Table } from "sequelize-typescript"
+
+
 interface TaskCreationAttrs{
-    text:string;
+    value:string;
 }
+
 
 @Table( {tableName: 'Tasks'})
 export class Task extends Model<Task, TaskCreationAttrs>{

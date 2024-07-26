@@ -1,5 +1,7 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { Column, DataType, Model, PrimaryKey, Table } from "sequelize-typescript"
+
+
 interface TaskCreationAttrs{
     text:string;
 }

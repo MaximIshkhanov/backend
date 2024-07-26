@@ -10,7 +10,7 @@ export class TaskService {
 
 
     async createTask(dto: CreateTaskDto){
-        console.log(dto);
+        console.log(dto)
         const task = await this.taskRepository.create(dto);
         return task;
     }

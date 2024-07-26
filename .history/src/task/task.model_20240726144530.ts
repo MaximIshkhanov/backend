@@ -17,5 +17,5 @@ export class Task extends Model<Task, TaskCreationAttrs>{
 
     @ApiProperty({example: 'true', description: 'состояние задачи'})
     @Column( {type: DataType.BOOLEAN, defaultValue: false})
-    isComplete: boolean;
-}
+    isCompete: boolean;
+}eg

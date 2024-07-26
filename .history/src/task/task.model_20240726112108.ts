@@ -1,8 +1,11 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { Column, DataType, Model, PrimaryKey, Table } from "sequelize-typescript"
+
+
 interface TaskCreationAttrs{
-    text:string;
+    value:string;
 }
+
 
 @Table( {tableName: 'Tasks'})
 export class Task extends Model<Task, TaskCreationAttrs>{
@@ -13,7 +16,7 @@ export class Task extends Model<Task, TaskCreationAttrs>{
 
     @ApiProperty({example: 'учить бэк', description: 'задача'})
     @Column( {type: DataType.STRING, unique:true, allowNull: false})
-    text: string;
+    taxt: string;
 
     @ApiProperty({example: 'true', description: 'состояние задачи'})
     @Column( {type: DataType.BOOLEAN, defaultValue: false})
