@@ -5,6 +5,9 @@ import { CreateTaskDto } from './dto/create.task.dto';
 
 @Injectable()
 export class TaskService {
+    deleteTask(id: number) {
+        throw new Error('Method not implemented.');
+    }
 
     constructor(@InjectModel(Task) private taskRepository: typeof Task){}
 
@@ -18,5 +21,9 @@ export class TaskService {
         const tasks = await this.taskRepository.findAll();
         return tasks;
         
+    }
+    async deleteOneTask(id: number){
+        const task = await this.taskRepository.destroy({where:{id}});
+        return task;
     }
 }

@@ -25,6 +25,6 @@ export class TaskController {
     }
     @Delete(':id')
     delete(@Param('id',ParseIntPipe) id: number){
-        return this.tasksService.deleteOneTask(id);
+        return this.tasksService.deleteOneTaы(id);
     }
 }
