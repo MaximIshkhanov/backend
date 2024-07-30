@@ -27,7 +27,7 @@ export class TaskService {
         const task = await this.taskRepository.destroy({where:{id}});
         return task;
     }
-    async updateTask(id: number, dto: CreateTaskDto){
+    async updateTask(id: number, dto: UpdateTasksDto){
         const task = await this.taskRepository.update(dto, {where: {id}});
         return task;
     }

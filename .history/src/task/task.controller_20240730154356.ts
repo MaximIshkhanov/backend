@@ -31,7 +31,7 @@ export class TaskController {
     update(@Param('id') id: string, @Body() taskDto: CreateTaskDto) {
         return this.tasksService.updateTask(Number(id), taskDto);
     }
-    @Put(':is')
+    @Put(':id')
     update(@Param('id') id: string, @Body() taskDto: CreateTaskDto) {
         return this.tasksService.updateTask(Number(id), taskDto);
     }

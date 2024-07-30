@@ -32,7 +32,7 @@ export class TaskController {
         return this.tasksService.updateTask(Number(id), taskDto);
     }
     @Put(':is')
-    update(@Param('id') id: string, @Body() taskDto: CreateTaskDto) {
+    update(@Param('id') id: string, @Body() taskDto: CreateTaskDto): Promise<[affectedCount: number]> {
         return this.tasksService.updateTask(Number(id), taskDto);
     }
 }
