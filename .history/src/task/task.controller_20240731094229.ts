@@ -32,8 +32,8 @@ export class TaskController {
         return this.tasksService.updateTask(Number(id), taskDto);
     }
     @Put(':id')
-    isComplete(@Param('id') id: string, @Body() taskDto: CreateTaskDto) {
-        return this.tasksService.isCompleteTask(Number(id), taskDto);
+    update(@Param('id') id: string, @Body() taskDto: CreateTaskDto) {
+        return this.tasksService.updateTask(Number(id), taskDto);
     }
 
 }

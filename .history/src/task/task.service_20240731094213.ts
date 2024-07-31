@@ -31,7 +31,7 @@ export class TaskService {
         const task = await this.taskRepository.update(dto, {where: {id}});
         return task;
     }
-    async isCompleteTask(id: number, dto: CreateTaskDto){
+    async isComplTask(id: number, dto: CreateTaskDto){
         const task = await this.taskRepository.update(dto, {where: {id}});
         return task;
     }
